@@ -7,6 +7,8 @@ public class CalAssembler {
     CalMul calMul;
     CalDiv calDiv;
 
+
+    // 5개의 인자를 가진 생성자(AllArgsConstructor) 생성 후 this 접근자로 MyCalculator에 대입시킴
     public CalAssembler(MyCalculator calculator, CalAdd calAdd, CalSub calSub, CalMul calMul, CalDiv calDiv) {
         this.calculator = calculator;
         this.calAdd = calAdd;

@@ -10,7 +10,9 @@
 
     <bean id="myCalculator" class="spring5.MyCalculator" />
 
+    <!-- calAssembler 라는 이름을 가진 빈 객체를 생성 -->
     <bean id="calAssembler" class="spring5.CalAssembler" >
+    <!-- 인자 5개를 갖고 있는 생성자에 객체 주입 + 전달 -->
         <constructor-arg ref="myCalculator" />
         <constructor-arg ref="cAdd" />
         <constructor-arg ref="cSub" />
