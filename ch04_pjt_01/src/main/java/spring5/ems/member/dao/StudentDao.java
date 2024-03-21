@@ -11,7 +11,7 @@ public class StudentDao {
     private Map<String, Student> studentDB = new HashMap<String, Student>();
 
     public StudentDao() {
-
+        //  기본생성자
     }
 
     public void insert(Student student) { //등록

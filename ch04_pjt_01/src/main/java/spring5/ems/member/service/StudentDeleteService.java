@@ -2,13 +2,13 @@ package spring5.ems.member.service;
 
 import spring5.ems.member.dao.StudentDao;
 
-public class StudentSelectService {
+public class StudentDeleteService {
     private StudentDao studentDao;
 
-    public StudentSelectService() {
+    public StudentDeleteService() {
     }
 
-    public StudentSelectService(StudentDao studentDao) {
+    public StudentDeleteService(StudentDao studentDao) {
         this.studentDao = studentDao;
     }
 }
