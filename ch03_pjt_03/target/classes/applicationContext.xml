@@ -1,0 +1,22 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="cAdd" class="spring5.CalAdd" />
+    <bean id="cSub" class="spring5.CalSub" />
+    <bean id="cMul" class="spring5.CalMul" />
+    <bean id="cDiv" class="spring5.CalDiv" />
+
+    <bean id="myCalculator" class="spring5.MyCalculator" />
+
+<!--    id: 객체이름-->
+    <bean id="calAssembler" class="spring5.CalAssembler" >
+        <constructor-arg ref="myCalculator" />
+        <constructor-arg ref="cAdd" />
+        <constructor-arg ref="cSub" />
+        <constructor-arg ref="cMul" />
+        <constructor-arg ref="cDiv" />
+    </bean>
+
+</beans>

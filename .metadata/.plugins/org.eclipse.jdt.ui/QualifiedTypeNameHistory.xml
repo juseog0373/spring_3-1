@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="ch02_pjt_01.MyCalculator"/>
+    <fullyQualifiedTypeName name="ch02_pjt_01.ICalculator"/>
+    <fullyQualifiedTypeName name="ch02_pjt_01.CalAdd"/>
+    <fullyQualifiedTypeName name="ch02_pjt_01.CalSub"/>
+    <fullyQualifiedTypeName name="ch02_pjt_01.CalMul"/>
+    <fullyQualifiedTypeName name="ch02_pjt_02.MyCalculator"/>
+    <fullyQualifiedTypeName name="ch02_pjt_02.ICalculator"/>
+    <fullyQualifiedTypeName name="ch02_pjt_02.CalAdd"/>
+    <fullyQualifiedTypeName name="ch02_pjt_02.CalDiv"/>
+    <fullyQualifiedTypeName name="ch02_pjt_02.CalMul"/>
+    <fullyQualifiedTypeName name="ch02_pjt_02.CalSub"/>
+    <fullyQualifiedTypeName name="ch02_pjt_03.CalAssembler"/>
+</qualifiedTypeNameHistroy>

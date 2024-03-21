@@ -1,0 +1,11 @@
+package ch02_pjt_01;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		MyCalculator obcal = new MyCalculator();
+		obcal.calAdd(10, 5);
+		System.out.println(obcal.calAdd(0, 0));
+	}
+	
+}
