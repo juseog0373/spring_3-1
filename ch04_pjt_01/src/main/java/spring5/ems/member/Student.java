@@ -1,7 +1,7 @@
 package spring5.ems.member;
 
 public class Student {
-    private String sNum; // 학번
+    private String sNum;
     private String sId;
     private String sPw;
     private String sName;
@@ -9,7 +9,12 @@ public class Student {
     private char sGender;
     private String sMajor;
 
+    public void setsNum() {
+
+    }
+
     public Student() {
+
     }
 
     public Student(String sNum, String sId, String sPw, String sName, int sAge, char sGender, String sMajor) {
@@ -46,35 +51,3 @@ public class Student {
         this.sPw = sPw;
     }
 
-    public String getsName() {
-        return sName;
-    }
-
-    public void setsName(String sName) {
-        this.sName = sName;
-    }
-
-    public int getsAge() {
-        return sAge;
-    }
-
-    public void setsAge(int sAge) {
-        this.sAge = sAge;
-    }
-
-    public char getsGender() {
-        return sGender;
-    }
-
-    public void setsGender(char sGender) {
-        this.sGender = sGender;
-    }
-
-    public String getsMajor() {
-        return sMajor;
-    }
-
-    public void setsMajor(String sMajor) {
-        this.sMajor = sMajor;
-    }
-}

@@ -1,11 +1,13 @@
 package spring5.ems.member;
 
 public class DBConnectionInfo {
+
     private String url;
     private String userId;
     private String userPw;
 
     public DBConnectionInfo() {
+
     }
 
     public String getUrl() {
@@ -31,4 +33,7 @@ public class DBConnectionInfo {
     public void setUserPw(String userPw) {
         this.userPw = userPw;
     }
+
+
 }
+
