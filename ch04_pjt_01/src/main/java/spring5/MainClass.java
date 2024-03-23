@@ -7,8 +7,8 @@ import spring5.ems.member.util.InitSampleData;
 
 public class MainClass {
     public static void main(String[] args) {
-        GenericXmlApplicationContext ac = new GenericXmlApplicationContext("classpath:applicationContext.xml");
-        InitSampleData initSampleData = ac.getBean("initSampleData", InitSampleData.class);
+        GenericXmlApplicationContext ac = new GenericXmlApplicationContext("classpath:applicationContext.xml"); // 빈 객체가 정의되어있는 xml 파일 연결
+        InitSampleData initSampleData = ac.getBean("initSampleData", InitSampleData.class); // 빈에 등록된 initSampleData 객체를 가져옴
 
         String[] sNums = initSampleData.getsNums();
         String[] sIds = initSampleData.getsIds();

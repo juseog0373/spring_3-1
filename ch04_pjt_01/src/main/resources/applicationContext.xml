@@ -80,9 +80,11 @@
     <bean id="studentAllSelectService" class="spring5.ems.member.service.StudentAllSelectService">
         <constructor-arg ref="studentDao" />
     </bean>
+    <!-- studentSelectService 빈 생성 -->
     <bean id="studentSelectService" class="spring5.ems.member.service.StudentSelectService">
         <constructor-arg ref="studentDao" />
     </bean>
+    <!-- printStudentInformationService 빈 생성 -->
     <bean id="printStudentInformationService" class="spring5.ems.member.service.PrintStudentInformationService">
         <constructor-arg ref="studentSelectService"/>
     </bean>
