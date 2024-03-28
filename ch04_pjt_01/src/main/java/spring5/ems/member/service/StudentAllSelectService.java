@@ -19,5 +19,4 @@ public class StudentAllSelectService {
     public Map<String, Student> allSelect(){
         return studentDao.getStudentDB();
     }
-
 }

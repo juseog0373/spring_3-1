@@ -2,7 +2,7 @@ package spring5;
 
 import org.springframework.context.support.GenericXmlApplicationContext;
 import spring5.ems.member.Student;
-import spring5.ems.member.service.StudentRegisterService;
+import spring5.ems.member.service.*;
 import spring5.ems.member.util.InitSampleData;
 
 public class MainClass {
@@ -25,5 +25,35 @@ public class MainClass {
         for (int i = 0; i < sNums.length; i++) {
             registerService.register(new Student(sNums[i], sIds[i], sPws[i], sNames[i], sAges[i], sGenders[i], sMajors[i]));
         }
+
+        PrintStudentInformationService printStudentInformationService = ac.getBean("printStudentInformationService", PrintStudentInformationService.class);
+        printStudentInformationService.printStudentInfo(); // 학생 리스트 전부 출력
+
+        // 학생 등록
+        registerService.register(new Student("hbs006", "dear", "p0006", "melissa", 25, 'W', "Music"));
+        printStudentInformationService.printStudentInfo(); // 학생 리스트 전부 출력
+
+        StudentSelectService studentSelectService = ac.getBean("studentSelectService", StudentSelectService.class);
+        Student selectedStudent = studentSelectService.select("hbs001");
+
+        System.out.println("STUDENT START ------------------");
+        System.out.print("sNum:" + selectedStudent.getsNum() + "\t");
+        System.out.print("|sId:" + selectedStudent.getsId() + "\t");
+        System.out.print("|sPw:" + selectedStudent.getsPw() + "\t");
+        System.out.print("|sName:" + selectedStudent.getsName() + "\t");
+        System.out.print("|sAge:" + selectedStudent.getsAge() + "\t");
+        System.out.print("|sGender:" + selectedStudent.getsGender() + "\t");
+        System.out.println("|sMajor:" + selectedStudent.getsMajor());
+        System.out.println("END ----------------------------");
+
+        // 특정 학번 정보 수정
+        StudentModifyService studentModifyService = ac.getBean("studentModifyService", StudentModifyService.class);
+        studentModifyService.modify(new Student("hbs006", "dear", "p0006", "melissa", 25, 'M', "Computer"));
+        printStudentInformationService.printStudentInfo();
+
+        // 학생 삭제
+        StudentDeleteService studentDeleteService = ac.getBean("studentDeleteService", StudentDeleteService.class);
+        studentDeleteService.delete("hbs006");
+        printStudentInformationService.printStudentInfo();
     }
 }

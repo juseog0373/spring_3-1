@@ -27,6 +27,10 @@ public class InitSampleData {
     private char[] sGenders;
     private String[] sMajors;
 
+    public InitSampleData() {
+        System.out.println("InitSampleData.InitSampleData");
+    }
+
     public String[] getsNums() {
         return sNums;
     }

@@ -9,9 +9,6 @@ public class Student {
     private char sGender;
     private String sMajor;
 
-    public void setsNum() {
-
-    }
 
     public Student() {
 
@@ -49,6 +46,38 @@ public class Student {
 
     public void setsPw(String sPw) {
         this.sPw = sPw;
+    }
+
+    public String getsName() {
+        return sName;
+    }
+
+    public void setsName(String sName) {
+        this.sName = sName;
+    }
+
+    public int getsAge() {
+        return sAge;
+    }
+
+    public void setsAge(int sAge) {
+        this.sAge = sAge;
+    }
+
+    public char getsGender() {
+        return sGender;
+    }
+
+    public void setsGender(char sGender) {
+        this.sGender = sGender;
+    }
+
+    public String getsMajor() {
+        return sMajor;
+    }
+
+    public void setsMajor(String sMajor) {
+        this.sMajor = sMajor;
     }
 }
 
